@@ -1,8 +1,5 @@
-import { head, tail, init, last } from "./src/ArrayOperations"
-import { concat, concatOptional } from "./src/Concat";
-import { clone, merge } from "./src/Merge";
-import { isBookRead } from "./src/ReadBooks";
-
+import { head, tail, init, last, concat, concatOptional, clone, merge, isBookRead } from './src';
+import { SlotMachine } from './src/utils/SlotMachine';
 
 //Variables
 const arr = [1, 2, 3, 4, 5];
@@ -69,3 +66,19 @@ const bookRead = isBookRead(books, "Devastación"); // true
 console.log(`Ejercicio 4 READ BOOKS: ${bookRead} -> ${isBookRead(books, "Devastación")}`);
 console.log(`Ejercicio 4 READ BOOKS: ${bookRead} -> ${isBookRead(books, "Canción de hielo y fuego")}`);
 console.log(`Ejercicio 4 READ BOOKS: ${bookRead} -> ${isBookRead(books, "Los Pilares de la Tierra")}`);
+
+
+//EJERCICIO 5
+
+const machine1 = new SlotMachine();
+
+
+machine1.play();
+machine1.play();
+machine1.play();
+machine1.play();
+machine1.play();
+machine1.play();
+
+
+
