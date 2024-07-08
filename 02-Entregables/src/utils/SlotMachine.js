@@ -1,7 +1,7 @@
 // EJERCICIO 5 SLOT MACHINE
 export class SlotMachine {
 
-    #coins = 0;
+    #coins;
 
     constructor() {
         this.#coins = 0;
